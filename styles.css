@@ -166,3 +166,21 @@
                         opacity: 1;
                     }
                 }
+
+.header {
+    position: absolute;
+    top: 10px;  /* Üst kenardan mesafe */
+    left: 10px; /* Sol kenardan mesafe */
+    font-size: 18px; /* Yazı boyutunu biraz küçült */
+    font-weight: bold;
+    white-space: nowrap; /* Yazının alt satıra kaymasını engelle */
+    max-width: 90%; /* Aşırı genişlemeyi önle */
+}
+
+@media (max-width: 768px) { /* Mobil için özel ayarlar */
+    .header {
+        font-size: 16px; /* Küçük ekranlarda yazı biraz daha küçülsün */
+        left: 5px;
+        top: 5px;
+    }
+}
